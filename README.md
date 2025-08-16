@@ -44,7 +44,9 @@ It gives the BMI value, category (Underweight, Normal, Overweight, Obese), and h
    cd bmi-calculator
 
 2. Install dependencies
+    ```bash
     pnpm install
 
 3. Run the app in dev mode
+    ```bash
     pnpm dev
