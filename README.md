@@ -1,12 +1,50 @@
-# React + Vite
+# 📊 BMI Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **React + Tailwind CSS** app to calculate Body Mass Index (BMI) based on user weight and height.  
+It gives the BMI value, category (Underweight, Normal, Overweight, Obese), and health suggestions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **React 19** → For building the user interface  
+- **Vite** → Fast development & build tool  
+- **Tailwind CSS 4** → For modern utility-first styling  
+- **ESLint** → For maintaining clean and consistent code  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- 📥 **Input fields** for weight (kg) and height (inches)  
+- 📊 **BMI calculation** with formula:  
+  \[
+  BMI = \frac{Weight}{(Height \times 0.0254)^2}
+  \]  
+- 🎨 **Dynamic results**:
+  - Shows BMI value
+  - Category with color code:
+    - Underweight (blue)
+    - Normal (green)
+    - Overweight (yellow)
+    - Obese (red)
+- 💡 **Health suggestions** based on BMI category  
+- 🔄 **Reset button** to clear inputs and results  
+- 🛡 **Input validation**:
+  - Prevents negative/empty values
+  - Displays error message if inputs are invalid  
+
+---
+
+## 🛠 Setup
+
+1. Clone the repo  
+   ```bash
+   git clone <repo-url>
+   cd bmi-calculator
+
+2. Install dependencies
+    pnpm install
+
+3. Run the app in dev mode
+    pnpm dev
